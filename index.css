@@ -1,0 +1,123 @@
+.own-font {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header {
+  background: url(Images/homepagepic4.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 800px;
+}
+
+.navbar {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#profileimg {
+  float: left;
+  padding-right: 10px;
+  padding-top: 15px;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    min-height: 500px
+  }
+  #profileimg {
+    display: block;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  .parallax-container {
+    height: 200px;
+  }
+}
+
+.own-card {
+  margin: 3px;
+}
+
+.h5.own-margin {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.preview-image {
+  padding-top: 0.75rem;
+}
+
+.own-card-action {
+  background-color: inherit;
+  border-top: 1px solid rgba(160, 160, 160, 0.2);
+  position: relative;
+  padding: 16px 24px;
+}
+
+.own-card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
+  transition: color .3s ease;
+  text-transform: uppercase;
+  padding: 16px 24px;
+}
+
+.article-link {
+  padding-bottom: 10px;
+}
+
+#socialmedialinks {
+  list-style: none;
+  padding: 0px;
+}
+
+#socialmedialinks li {
+  display: inline;
+}
+
+.socialmediabutton {
+  display: inline;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* Attributes related to the form */
+
+/* label color */
+
+.input-field label {
+  color: #000;
+}
+
+/* label focus color */
+
+.input-field input[type=text]:focus+label {
+  color: #000;
+}
+
+/* label underline focus color */
+
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000;
+}
+
+/* valid color */
+
+.input-field input[type=text].valid {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000;
+}
+
+/* invalid color */
+
+.input-field input[type=text].invalid {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000;
+}
+
+/* icon prefix focus color */
+
+.input-field .prefix.active {
+  color: #000;
+}

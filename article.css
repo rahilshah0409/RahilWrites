@@ -1,0 +1,22 @@
+.own-font {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+@media screen and (max-width: 600px) {
+    .parallax-container {
+        height: 150px;
+      }
+}
+
+.articletitle {
+    padding-top: 25px;
+}
+
+.headline-img {
+    padding: 15px;
+    width: 100%;
+}
+
+.own-flow-text {
+    font-size: 1.3rem;
+}
