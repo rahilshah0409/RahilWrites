@@ -84,6 +84,11 @@ header {
 
 /* Attributes related to the form */
 
+.form-border {
+  border-color: black;
+  border: thin;
+}
+
 /* label color */
 
 .input-field label {
