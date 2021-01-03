@@ -16,11 +16,12 @@ header {
 
 #profileimg {
   float: left;
+  padding-top: 10px;
   padding-right: 10px;
-  padding-top: 15px;
+  width: 25%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 670px) {
   header {
     min-height: 500px
   }
@@ -29,7 +30,7 @@ header {
     float: none;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 55%;
   }
   .parallax-container {
     height: 200px;
