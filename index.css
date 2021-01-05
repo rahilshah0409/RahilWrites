@@ -127,3 +127,7 @@ header {
 .input-field .prefix.active {
   color: #000;
 }
+
+#otherlabel {
+  color: gray;
+}

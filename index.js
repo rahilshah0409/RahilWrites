@@ -16,4 +16,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function toggleOtherText() {
     document.getElementById('othertextarea').disabled = !document.getElementById('othertextarea').disabled;
+
+    if (!document.getElementById('othertextarea').disabled) {
+      document.getElementById('otherlabel').style.color = "#1a237e";
+    } else {
+      document.getElementById('otherlabel').style.color = "grey";
+    }
   }
