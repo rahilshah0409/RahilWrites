@@ -14,6 +14,14 @@ header {
   padding-right: 10px;
 }
 
+.own-sidenav {
+  padding-top: 20px;
+}
+
+.own-sidenav li {
+  padding-bottom: 15px;
+}
+
 #profileimg {
   float: left;
   padding-top: 10px;
