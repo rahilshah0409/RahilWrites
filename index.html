@@ -193,14 +193,14 @@
           <!-- Need Javascript to make this meaningful-->
           <div class="col s12 l8 offset-l2" id="form">
             <h4 class="indigo-text text-darken-4">Contact form</h4>
-            <form action="index.html" method="GET">
+            <form action="index.html" onSubmit="false" method="GET" name="contactform">
               <div class="input-field">
-                <input required type="text" id="fullname">
+                <input required type="text" name="fullname" id="fullname">
                 <label class="indigo-text text-darken-4" for="fullname">Full name:</label>
               </div>
 
               <div class="input-field">
-                <input required type="email" id="email" class="validate">
+                <input required type="email" name="email" id="email" class="validate">
                 <label class="indigo-text text-darken-4" for="email" data-error="Invalid email address"
                   data-success="Valid email address">Email address:</label>
               </div>
@@ -247,9 +247,14 @@
               </div>
 
               <!-- Not completed yet, want the submit button to show the pop up when all relevant thing have been filled in-->
-              <!--<input type="submit" value="Submit 2">-->
+              <!-- Another option is to disable the submit button until the name and email field have been filled in-->
+              <!-- Need submit input type instead of a link inside a button (which Submit 2 does) -->
+              <!-- <div class="center-align">
+                <input type="submit" value="Submit 1" class="btn indigo waves-effect waves-light" id="submitbtn">
+              </div> -->
+
               <div class="center-align">
-                <a href="#formsubmit" class="btn indigo center-align waves-effect waves-light modal-trigger">Submit</a>
+                <a href="#formsubmit" id="modalbtn" class="btn indigo center-align waves-effect waves-light modal-trigger">Submit</a>
               </div>
 
               <div class="modal teal" id="formsubmit">
