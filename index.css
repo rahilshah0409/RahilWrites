@@ -45,9 +45,9 @@ header {
   }
 }
 
-.own-card {
+/* .own-card {
   margin: 3px;
-}
+} */
 
 .h5.own-margin {
   margin-top: 10px;
@@ -69,6 +69,10 @@ header {
   transition: color .3s ease;
   text-transform: uppercase;
   padding: 16px 24px;
+}
+
+.own-card-action a:hover {
+  background-color: #ad1457;
 }
 
 .article-link {
@@ -142,15 +146,16 @@ header {
 
 #submitbtn {
   color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.thankYouBox {
+#thankYouPopUp {
   display: none;
   margin: 20px;
 }
 
 .thankYouContent {
-  padding: 24px;
+  padding: 20px;
 }
 
 .thankYouFooter {

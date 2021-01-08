@@ -10,7 +10,28 @@ $(document).ready(function () {
 
 // Vanilla JS
 
-/* ------- For contact form -------- */
+/* ------- For article cards ------- */
+let articleCards = document.getElementsByClassName('card');
+for (var i = 0; i < articleCards.length; i++) {
+  articleCards[i].addEventListener('mouseenter', active);
+  articleCards[i].addEventListener('mouseleave', nonActive);
+}
+
+function active(event) {
+  let card = event.target;
+  card.classList.remove('teal');
+  card.classList.add('pink');
+  card.classList.add('z-depth-5');
+}
+
+function nonActive(event) {
+  let card = event.target;
+  card.classList.remove('pink');
+  card.classList.add('teal');
+  card.classList.remove('z-depth-5');
+}
+
+/* ------- For contact form ------- */
 document.addEventListener('DOMContentLoaded', function () {
   // Attach `change` event listener to checkbox
   document.getElementById('othercheckbox').onchange = toggleOtherText;
