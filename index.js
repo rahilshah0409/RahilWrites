@@ -31,7 +31,19 @@ form.addEventListener('submit', thankTheReader);
 
 function thankTheReader(event) {
   event.preventDefault();
-  console.log("Event type is " + event.type);
   let popUp = document.getElementById('thankYouPopUp');
+
+  let popUpOptions = document.getElementsByClassName('thankYouFooter')[0];
+
+  for (var i = 0; i < popUpOptions.children.length; i++) {
+    popUpOptions.addEventListener('click', removePopUp)
+  }
+
   popUp.style.display = 'block';
+}
+
+function removePopUp(event) {
+  let elem = event.target;
+  let popUp = elem.parentNode.parentNode;
+  popUp.style.display = 'none';
 }
