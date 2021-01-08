@@ -193,7 +193,7 @@
           <!-- Need Javascript to make this meaningful-->
           <div class="col s12 l8 offset-l2" id="form">
             <h4 class="indigo-text text-darken-4">Contact form</h4>
-            <form action="index.html" onSubmit="false" method="GET" name="contactform">
+            <form action="index.html" method="GET" name="contactform">
               <div class="input-field">
                 <input required type="text" name="fullname" id="fullname">
                 <label class="indigo-text text-darken-4" for="fullname">Full name:</label>
@@ -249,12 +249,12 @@
               <!-- Not completed yet, want the submit button to show the pop up when all relevant thing have been filled in-->
               <!-- Another option is to disable the submit button until the name and email field have been filled in-->
               <!-- Need submit input type instead of a link inside a button (which Submit 2 does) -->
-              <!-- <div class="center-align">
-                <input type="submit" value="Submit 1" class="btn indigo waves-effect waves-light" id="submitbtn">
-              </div> -->
+              <div class="center-align modal-trigger">
+                <input type="submit" value="Submit" class="btn indigo waves-effect waves-light" id="submitbtn">
+              </div>
 
-              <div class="center-align">
-                <a href="#formsubmit" id="modalbtn" class="btn indigo center-align waves-effect waves-light modal-trigger">Submit</a>
+              <!-- <div class="center-align">
+                <a href="#formsubmit" id="modalbtn" class="btn indigo center-align waves-effect waves-light modal-trigger">Submit 2</a>
               </div>
 
               <div class="modal teal" id="formsubmit">
@@ -266,6 +266,18 @@
                 <div class="modal-footer teal">
                   <a href="#" class="modal-close btn">Exit</a>
                   <a href="#articles" class="modal-close btn">Go to see more articles</a>
+                </div>
+              </div> -->
+
+              <div class="teal lighten-3 thankYouBox" id="thankYouPopUp">
+                <div class="thankYouContent">
+                  <h5 class="center-align indigo-text">Thank you for submitting the Contact form. I will try to get back
+                    to you as soon as I can, but feel free to connect with me on any social media platform if I don't
+                    respond soon.</h5>
+                </div>
+                <div class="center-align thankYouFooter teal-lighten-1">
+                  <a href="#" class="indigo btn">Exit</a>
+                  <a href="#articles" class="indigo btn">Go to see more articles</a>
                 </div>
               </div>
               <!--

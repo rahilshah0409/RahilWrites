@@ -3,7 +3,7 @@ $(document).ready(function () {
   // Triggers sidebar
   $('.sidenav').sidenav();
   // Creates submission pop up
-  $('.modal').modal();
+  //$('.modal').modal();
   $('.parallax').parallax();
   $('.scrollspy').scrollSpy();
 });
@@ -26,22 +26,12 @@ function toggleOtherText() {
   }
 }
 
-// Modal for submission pop-up after checking that relevant form questions have been filled in
-// document.addEventListener('DOMContentLoaded', function() {
-//   var elems = document.querySelectorAll('.modal');
-//   var instances = M.Modal.init(elems, options);
-// });
+let form = document.getElementsByTagName('form')['contactform']
+form.addEventListener('submit', thankTheReader);
 
-document.addEventListener('DOMContentLoaded', enableSubmit(), false);
-
-function enableSubmit() {
-  let contactform = document.forms["contactform"];
-  let fullname = contactform["fullname"];
-  let email = contactform["email"];
-
-  if (fullname.value != "") {
-    document.getElementById('modalbtn').disabled = false;
-  }
+function thankTheReader(event) {
+  event.preventDefault();
+  console.log("Event type is " + event.type);
+  let popUp = document.getElementById('thankYouPopUp');
+  popUp.style.display = 'block';
 }
-
-enableSubmit();

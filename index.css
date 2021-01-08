@@ -143,3 +143,16 @@ header {
 #submitbtn {
   color: white;
 }
+
+.thankYouBox {
+  display: none;
+  margin: 20px;
+}
+
+.thankYouContent {
+  padding: 24px;
+}
+
+.thankYouFooter {
+  padding-bottom: 20px;
+}
