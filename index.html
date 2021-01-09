@@ -193,7 +193,7 @@
           <!-- Need Javascript to make this meaningful-->
           <div class="col s12 l8 offset-l2" id="form">
             <h4 class="indigo-text text-darken-4">Contact form</h4>
-            <form action="index.html" method="GET" name="contactform">
+            <form action="index.html" method="POST" name="contactform" data-netlify="true">
               <div class="input-field">
                 <input required type="text" name="fullname" id="fullname">
                 <label class="indigo-text text-darken-4" for="fullname">Full name:</label>
@@ -209,30 +209,30 @@
                 <p class="indigo-text text-darken-4">Reasons for getting in touch:</p>
                 <p>
                   <label class="indigo-text text-darken-4">
-                    <input type="checkbox">
+                    <input type="checkbox" name="reasonoptions">
                     <span>Discussing an article</span>
                   </label>
                 </p>
                 <p>
                   <label class="indigo-text text-darken-4">
-                    <input type="checkbox">
+                    <input type="checkbox" name="reasonoptions">
                     <span>Connecting</span>
                   </label>
                 </p>
                 <p>
                   <label class="indigo-text text-darken-4">
-                    <input type="checkbox">
+                    <input type="checkbox" name="reasonoptions">
                     <span>Work experience/Career opportunities</span>
                   </label>
                 </p>
                 <p>
                   <label class="indigo-text text-darken-4">
-                    <input type="checkbox" id="othercheckbox">
+                    <input type="checkbox" id="othercheckbox" name="reasonoptions">
                     <span>Other (specify below)</span>
                   </label>
                 </p>
                 <div class="input-field">
-                  <textarea disabled id="othertextarea" class="materialize-textarea"></textarea>
+                  <textarea disabled id="othertextarea" name="othermessage" class="materialize-textarea"></textarea>
                   <label id="otherlabel" for="otherreason">
                     Other reason
                   </label>
@@ -240,10 +240,14 @@
               </div>
 
               <div class="input-field">
-                <textarea id="message" class="materialize-textarea"></textarea>
+                <textarea id="message" name="optionalmessage" class="materialize-textarea"></textarea>
                 <label for="message" class="indigo-text text-darken-4">
                   Your message (optional)
                 </label>
+              </div>
+
+              <div class="input-field">
+                <div data-netlify-recaptcha="true"></div>
               </div>
 
               <div class="center-align">
