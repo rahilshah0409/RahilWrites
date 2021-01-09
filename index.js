@@ -14,7 +14,13 @@ $(document).ready(function () {
 let articleCards = document.getElementsByClassName('card');
 for (var i = 0; i < articleCards.length; i++) {
   articleCards[i].addEventListener('mouseenter', active);
-  articleCards[i].addEventListener('mouseleave', nonActive);
+  articleCards[i].addEventListener('mouseleave', nonActiveCard);
+  let cardComponents = articleCards[i].children;
+  let noOfComponents = cardComponents.length;
+  console.log(cardComponents[noOfComponents - 1].firstElementChild);
+  console.log(cardComponents[noOfComponents - 1].firstElementChild.parentNode.parentNode);
+
+  cardComponents[noOfComponents - 1].firstElementChild.addEventListener('click', nonActiveLink);
 }
 
 function active(event) {
@@ -24,8 +30,15 @@ function active(event) {
   card.classList.add('z-depth-5');
 }
 
-function nonActive(event) {
+function nonActiveCard(event) {
   let card = event.target;
+  card.classList.remove('pink');
+  card.classList.add('teal');
+  card.classList.remove('z-depth-5');
+}
+
+function nonActiveLink(event) {
+  let card = event.target.parentNode.parentNode;
   card.classList.remove('pink');
   card.classList.add('teal');
   card.classList.remove('z-depth-5');
