@@ -193,7 +193,7 @@
           <!-- Need Javascript to make this meaningful-->
           <div class="col s12 l8 offset-l2" id="form">
             <h4 class="indigo-text text-darken-4">Contact form</h4>
-            <form action="index.html" method="POST" name="contactform" data-netlify="true">
+            <form action="index.html" method="POST" name="contactform" data-netlify="true" onsubmit="return thankTheReader()">
               <div class="input-field">
                 <input required type="text" name="fullname" id="fullname">
                 <label class="indigo-text text-darken-4" for="fullname">Full name:</label>
@@ -246,7 +246,7 @@
                 </label>
               </div>
 
-              <div class="input-field">
+              <div class="input-field center-align">
                 <div data-netlify-recaptcha="true"></div>
               </div>
 
