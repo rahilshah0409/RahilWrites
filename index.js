@@ -60,11 +60,11 @@ function toggleOtherText() {
   }
 }
 
-let form = document.getElementsByTagName('form')['contactform']
-form.addEventListener('submit', thankTheReader);
+// let form = document.getElementsByTagName('form')['contactform']
+// form.addEventListener('submit', thankTheReader);
 
-function thankTheReader(event) {
-  event.preventDefault();
+function thankTheReader() {
+  // event.preventDefault();
   let popUp = document.getElementById('thankYouPopUp');
 
   let popUpOptions = document.getElementsByClassName('thankYouFooter')[0];
@@ -74,6 +74,8 @@ function thankTheReader(event) {
   }
 
   popUp.style.display = 'block';
+
+  return true;
 }
 
 function removePopUp(event) {
