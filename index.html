@@ -205,7 +205,7 @@
                   data-success="Valid email address">Email address:</label>
               </div>
 
-              <div class="input-field">
+              <!-- <div class="input-field">
                 <p class="indigo-text text-darken-4">Reasons for getting in touch:</p>
                 <p>
                   <label class="indigo-text text-darken-4">
@@ -234,7 +234,38 @@
                 <div class="input-field">
                   <textarea disabled id="othertextarea" name="othermessage" class="materialize-textarea"></textarea>
                   <label id="otherlabel" for="otherreason">
-                    Other reason
+                    Other reason:
+                  </label>
+                </div>
+              </div> -->
+
+              <div class="input-field">
+                <p class="indigo-text text-darken-4">Reasons for getting in touch:</p>
+                <div class="checkbox-container" name="checkbox-container">
+                  <label class="indigo-text text-darken-4">
+                    <input type="checkbox" id="discussion-checkbox" name="reason">
+                    <span>Discussing an article</span>
+                  </label>
+                  <br>
+                  <label class="indigo-text text-darken-4">
+                    <input type="checkbox" id="connecting-checkbox" name="reason">
+                    <span>Connecting</span>
+                  </label>
+                  <br>
+                  <label class="indigo-text text-darken-4">
+                    <input type="checkbox" id="work-experience-checkbox" name="reason">
+                    <span>Work experience/Career opportunities</span>
+                  </label>
+                  <br>
+                  <label class="indigo-text text-darken-4">
+                    <input type="checkbox" id="othercheckbox" name="reason">
+                    <span>Other (specify below)</span>
+                  </label>
+                </div>
+                <div class="input-field">
+                  <textarea disabled id="othertextarea" name="othermessage" class="materialize-textarea"></textarea>
+                  <label id="otherlabel" for="otherreason">
+                    Other reason:
                   </label>
                 </div>
               </div>
@@ -242,7 +273,7 @@
               <div class="input-field">
                 <textarea id="message" name="optionalmessage" class="materialize-textarea"></textarea>
                 <label for="message" class="indigo-text text-darken-4">
-                  Your message (optional)
+                  Your message (optional):
                 </label>
               </div>
 
