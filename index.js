@@ -21,6 +21,7 @@ for (var i = 0; i < articleCards.length; i++) {
   console.log(cardComponents[noOfComponents - 1].firstElementChild.parentNode.parentNode);
 
   cardComponents[noOfComponents - 1].firstElementChild.addEventListener('click', nonActiveLink);
+  //console.log(cardComponents[noOfComponents - 1])
 }
 
 function active(event) {
@@ -39,8 +40,9 @@ function nonActiveCard(event) {
 
 function nonActiveLink(event) {
   let card = event.target.parentNode.parentNode;
+  console.log("The element in question is" + card);
   card.classList.remove('pink');
-  card.classList.add('teal');
+  //card.classList.add('teal');
   card.classList.remove('z-depth-5');
 }
 
